@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092d60">
+  <meta name="description" content="CampusConnect Plus makes campus life easier. Find campus services, discover student vendors and place an order.">
+  <title>CampusConnect Plus | Campus Life, Made Easier.</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/campusconnect-plus-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#home" aria-label="CampusConnect Plus home">
+    <img src="assets/campusconnect-plus-logo.png" alt="CampusConnect Plus logo">
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="nav">
+    <a href="#services">Explore services</a><a href="#how">How it works</a><a href="#vendors">Vendors</a>
+    <a class="nav-button" href="#order">Place an order</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="pill"><span></span> YOUR CAMPUS, CONNECTED</span>
+    <h1>Campus life,<br><em>made easier.</em></h1>
+    <p>Find the everyday services and essentials you need around campus. Discover student vendors, make a request and connect directly.</p>
+    <div class="actions"><a class="btn primary" href="#services">Explore services <b>→</b></a><a class="btn secondary" href="#order">Place an order</a></div>
+    <div class="hero-foot"><span class="check">✓</span> Simple · Convenient · Student-focused</div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="campus-card">
+      <div class="campus-symbol">⌂</div><span class="card-label">CAMPUSCONNECT PLUS</span>
+      <h2>Your campus<br>essentials, in<br><strong>one place.</strong></h2>
+      <div class="card-bottom"><span>DISCOVER</span><span>ORDER</span><span>CONNECT ↗</span></div>
+    </div>
+    <div class="float-tag tag-top">📚 Study essentials</div><div class="float-tag tag-bottom">🍲 Food &amp; refreshments</div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="section-title"><div><span class="eyebrow">WHAT ARE YOU LOOKING FOR?</span><h2>Campus services<br><em>at your fingertips.</em></h2></div><p>Explore useful services and products offered by vendors in your campus community. More listings will be added as vendors join.</p></div>
+  <div class="service-grid" id="serviceGrid"></div>
+</section>
+
+<section class="how" id="how">
+  <div class="section-title inverse"><div><span class="eyebrow">THREE SIMPLE STEPS</span><h2>From search to<br><em>sorted.</em></h2></div><p>CampusConnect Plus helps customers and student vendors connect without unnecessary complications.</p></div>
+  <div class="steps">
+    <article><span>01</span><div class="step-icon">⌕</div><h3>Find what you need</h3><p>Browse campus services, products and vendor listings.</p></article>
+    <article><span>02</span><div class="step-icon">▤</div><h3>Place your request</h3><p>Choose an item or service and provide the details of your order.</p></article>
+    <article><span>03</span><div class="step-icon">↗</div><h3>Connect with the vendor</h3><p>Continue on WhatsApp to confirm availability, price and delivery or collection.</p></article>
+  </div>
+</section>
+
+<section class="section vendors" id="vendors">
+  <div class="section-title"><div><span class="eyebrow">MEET THE CAMPUS COMMUNITY</span><h2>Discover <em>vendors.</em></h2></div><p>Vendor profiles and live product listings will appear here as participating vendors are onboarded.</p></div>
+  <div class="vendor-placeholder"><div class="placeholder-icon">＋</div><div><h3>Our vendor directory is getting ready.</h3><p>We're preparing to welcome campus businesses and student entrepreneurs. Check back as new vendors and offers are added.</p></div><a href="#order" class="text-link">Make an enquiry →</a></div>
+</section>
+
+<section class="order-section" id="order">
+  <div class="order-copy"><span class="eyebrow">NEED SOMETHING?</span><h2>Make a campus<br><em>request.</em></h2><p>Tell us what you are looking for. We'll prepare your message so you can send it to the CampusConnect Plus team on WhatsApp.</p><div class="order-note">✓ You review the message before sending it.</div></div>
+  <form class="order-form" id="orderForm">
+    <h3>Order / enquiry form</h3>
+    <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required>
+    <label for="phone">Your WhatsApp number</label><input id="phone" name="phone" type="tel" placeholder="e.g. 024 000 0000" required>
+    <label for="campus">Campus / location</label><input id="campus" name="campus" placeholder="Your campus or hall" required>
+    <label for="category">What do you need?</label><select id="category" name="category" required><option value="">Select a category</option></select>
+    <label for="description">Order details</label><textarea id="description" name="description" rows="4" placeholder="Item, quantity, preferred vendor or any other details..." required></textarea>
+    <button class="btn primary submit" type="submit">Continue to WhatsApp <b>↗</b></button>
+    <p class="form-message" id="formMessage" aria-live="polite">WhatsApp opens with your message ready. You choose whether to send it.</p>
+  </form>
+</section>
+<section class="vendor-cta"><div><span class="eyebrow">ARE YOU A CAMPUS VENDOR?</span><h2>Bring your business<br>to the campus community.</h2><p>We plan to onboard vendors and make their products and services easier to discover.</p></div><a class="btn light" href="#order">Register your interest ↗</a></section>
+</main>
+<footer><a href="#home" class="footer-brand">CampusConnect <b>Plus+</b></a><span>Campus Life, Made Easier.</span><small>© <span id="year"></span> CampusConnect Plus</small></footer>
+<script src="app.js"></script>
+</body>
+</html>
